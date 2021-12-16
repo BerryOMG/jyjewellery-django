@@ -168,8 +168,15 @@ def activate(request,uidb64,token):
 
 #can access only when you login
 @login_required(login_url = 'login')
+
 def dashboard(request):
-    return render(request,'accounts/dashboard.html')
+    user = request.user
+
+    context = {
+    'user':user
+    }
+
+    return render(request,'accounts/dashboard.html',context)
 
 
 def forgotPassword(request):
