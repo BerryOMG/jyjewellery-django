@@ -26,7 +26,8 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG',cast=bool, default=True)
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ['jyjewellery-env.eba-kxgu28pg.us-west-2.elasticbeanstalk.com']
 
 
 # Application definition
