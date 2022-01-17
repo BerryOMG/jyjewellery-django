@@ -1,6 +1,3 @@
-from django.shortcuts import render
-
-
 from django.shortcuts import render, redirect
 from django.http import HttpResponse,JsonResponse
 from carts.models import CartItem
@@ -169,7 +166,7 @@ def order_complete(request):
         'transID':payment.payment_id,
         'payment':payment,
         'sub_total':sub_total,
-        
+
         }
         return render(request,'orders/order_complete.html',context)
 
