@@ -28,8 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG',cast=bool, default=True)
 
 
-ALLOWED_HOSTS = ['jjyjewellery-app1-env.eba-m3c7eug8.us-west-2.elasticbeanstalk.com',
-                'jjyjewellery.herokuapp.com']
+ALLOWED_HOSTS = ['jjyjewellery.herokuapp.com']
 
 
 # Application definition
