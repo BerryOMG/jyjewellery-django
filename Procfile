@@ -1,1 +1,1 @@
-web. gunicorn jyjewellery.wsgi
+web: gunicorn jyjewellery.wsgi
